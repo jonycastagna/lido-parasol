@@ -97,10 +97,10 @@ function updateSummary() {
   const free = total - occupied - reserved - maintenance;
 
   summaryEl.innerHTML = `
-    <span><b>Libero</b><b>${free}</b></span>
-    <span><b>Occupato</b><b>${occupied}</b></span>
-    <span><b>Riservato</b><b>${reserved}</b></span>
-    <span><b>Manutenzione</b><b>${maintenance}</b></span>
+    <span><b>Liberi</b><b>${free}</b></span>
+    <span><b>Occupati</b><b>${occupied}</b></span>
+    <span><b>Riservati</b><b>${reserved}</b></span>
+    <span><b>In manutenzione</b><b>${maintenance}</b></span>
     <span><b>Totale</b><b>${total}</b></span>
   `;
 }
