@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lido Cinque Stelle</title>
+  <meta name="theme-color" content="#16833a" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🏖️</span>
+      <div>
+        <h1>Lido Cinque Stelle</h1>
+        <p>Gestione ombrelloni</p>
+      </div>
+    </div>
+
+    <div class="legend">
+      <span><i class="dot free"></i>Libero</span>
+      <span><i class="dot occupied"></i>Occupato</span>
+      <span><i class="dot reserved"></i>Riservato</span>
+      <span><i class="dot maintenance"></i>Manut.</span>
+    </div>
+
+    <div class="toolbar">
+      <button id="saveBtn">💾 Salva</button>
+      <button id="undoBtn" class="light">↩ Annulla</button>
+      <button id="resetBtn" class="light">↻ Reset</button>
+      <button id="shareBtn">WhatsApp</button>
+    </div>
+  </header>
+
+  <div id="saveStatus" class="save-status saved">All changes saved.</div>
+
+  <main class="layout">
+    <section class="map-scroll">
+      <div id="mapStage" class="map-stage">
+        <img id="mapImage" src="lido-map.png?v=final1" alt="Mappa del lido" />
+        <div id="parasols" class="parasols"></div>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <h2>Stato selezionato</h2>
+      <div id="selected">Tocca un ombrellone.</div>
+
+      <div class="status-buttons">
+        <button data-status="free" class="free-btn">Libero</button>
+        <button data-status="occupied" class="occupied-btn">Occupato</button>
+        <button data-status="reserved" class="reserved-btn">Riservato</button>
+        <button data-status="maintenance" class="maintenance-btn">Manut.</button>
+      </div>
+
+      <label>
+        Note
+        <input id="noteInput" placeholder="es. Rossi, 2 lettini" />
+      </label>
+      <button id="saveNoteBtn">Salva nota</button>
+
+      <hr />
+
+      <h2>Riepilogo</h2>
+      <div id="summary" class="summary"></div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "Lido Cinque Stelle",
+  "short_name": "Lido",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16833a"
+}
