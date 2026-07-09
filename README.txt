@@ -1,4 +1,4 @@
-Netlify package for Lido Cinque Stelle.
+Netlify package for Lido Caraibi Beach.
 
 Upload this ZIP directly to Netlify manual deploy.
 

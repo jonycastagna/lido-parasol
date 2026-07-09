@@ -181,7 +181,7 @@ document.getElementById("shareBtn").onclick = async () => {
   const maintenance = Object.values(status).filter(v => v === "maintenance").length;
   const free = total - occupied - reserved - maintenance;
 
-  const text = `Disponibilità Lido Cinque Stelle: ${free} liberi, ${occupied} occupati, ${reserved} riservati, ${maintenance} manutenzione. Totale ${total} ombrelloni.`;
+  const text = `Disponibilità Lido Caraibi Beach: ${free} liberi, ${occupied} occupati, ${reserved} riservati, ${maintenance} manutenzione. Totale ${total} ombrelloni.`;
 
   if (navigator.share) await navigator.share({ text });
   else window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank");
